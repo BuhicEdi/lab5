@@ -26,7 +26,7 @@ public class PrintArray {
 		for (int elementIndex: arrayOfInt) {
 			int value = elementIndex;
 			
-			while (elementIndex < 0) {
+			while (elementIndex > 0) {
 				value = value - 2;
 			}
 			
@@ -46,7 +46,8 @@ public class PrintArray {
 		int first = 0;
 		int last = arrayOfInt.length - 1;
 		
-		System.out.printf("\n", arrayOfInt[first], arrayOfInt[last]);
+		System.out.println(arrayOfInt[first]);
+		System.out.println(arrayOfInt[last]);
 	}
 	
 	public int[] getArray() {
