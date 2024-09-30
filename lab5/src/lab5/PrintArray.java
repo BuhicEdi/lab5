@@ -36,11 +36,11 @@ public class PrintArray {
 		}
 	}
 
-//	public void printReverse() {
+	public void printReverse() {
 //		for (int i = arrayOfInt.length - 1; i >= 0; i--) {
 //			System.out.println(arrayOfInt[i]);
 //		}
-//	}
+	}
 
 	public void printFirstAndLast() {
 		int first = 0;
