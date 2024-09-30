@@ -13,6 +13,7 @@ public class P5_1 {
 
 		System.out.println();
 		pr.printReverse();
+		pr.printFirstAndLast();
 
 
 
