@@ -23,23 +23,23 @@ public class PrintArray {
 	}
 
 	public void printEvenElement() {
-		for (int elementIndex: arrayOfInt) {
-			int value = elementIndex;
+		for (int i = 0; i < arrayOfInt.length; i++) {
+			int value = arrayOfInt[i];
 
-			while (elementIndex > 0) {
+			while (value > 0) {
 				value = value - 2;
 			}
 
 			if (value == 0) {
-				System.out.println(arrayOfInt[elementIndex]);
+				System.out.println(arrayOfInt[i]);
 			}									
 		}
 	}
 
 	public void printReverse() {
-//		for (int i = arrayOfInt.length - 1; i >= 0; i--) {
-//			System.out.println(arrayOfInt[i]);
-//		}
+		for (int i = arrayOfInt.length - 1; i >= 0; i--) {
+			System.out.println(arrayOfInt[i]);
+		}
 	}
 
 	public void printFirstAndLast() {

@@ -7,10 +7,13 @@ public class P5_1 {
 		int[] array = pr.getArray();
 
 
-		System.out.println(array);
+		for (int i = 0; i < array.length; i++) {
+			System.out.println(array[i]);
+		}
 
-		// pr.printReverse();
-		pr.printFirstAndLast();
+		System.out.println();
+		pr.printReverse();
+		pr.printEvenElement();
 		
 
 
