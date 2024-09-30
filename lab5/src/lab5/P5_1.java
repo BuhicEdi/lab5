@@ -7,9 +7,7 @@ public class P5_1 {
 		int[] array = pr.getArray();
 
 
-		for (int i = 0; i < array.length; i++) {
-			System.out.println(array[i]);
-		}
+		System.out.println(array);
 
 		pr.printReverse();
 		pr.printFirstAndLast();
