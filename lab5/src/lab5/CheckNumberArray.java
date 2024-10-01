@@ -57,7 +57,7 @@ public class CheckNumberArray {
 		return true;
 	}
 
-	public boolean isDecOrder() {
+	public boolean isDesOrder() {
 		for (int i = 0; i < nbrOfElements; i++) {
 			if (arrayOfInt[i + 1] > arrayOfInt[i]) {
 				return false;
@@ -68,7 +68,7 @@ public class CheckNumberArray {
 	}
 
 	public boolean isOrdered() {
-		if (isAccOrder() == true || isDecOrder() == true) {
+		if (isAccOrder() == true || isDesOrder() == true) {
 			return true;
 		} else {
 			return false;

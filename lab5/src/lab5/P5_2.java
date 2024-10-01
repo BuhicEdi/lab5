@@ -14,7 +14,7 @@ public class P5_2 {
 		System.out.println(arr.getSum());
 		System.out.println(arr.isAllTheSame());
 		System.out.println(arr.isAccOrder());
-		System.out.println(arr.isDecOrder());
+		System.out.println(arr.isDesOrder());
 		System.out.println(arr.isOrdered());
 	}
 
