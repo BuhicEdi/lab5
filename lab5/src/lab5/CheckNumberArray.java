@@ -38,8 +38,8 @@ public class CheckNumberArray {
 	}
 
 	public boolean isAllTheSame() {
-		for (int i = 0; i < nbrOfElements; i++) {
-			if (arrayOfInt[i] != arrayOfInt[i + 1]) {
+		for (int i = nbrOfElements - 1; i > 0; i--) {
+			if (arrayOfInt[i] != arrayOfInt[i - 1]) {
 				return false;
 			}
 		}
@@ -58,7 +58,7 @@ public class CheckNumberArray {
 	}
 
 	public boolean isDesOrder() {
-		for (int i = 0; i < nbrOfElements; i++) {
+		for (int i = 0; i < nbrOfElements - 1; i++) {
 			if (arrayOfInt[i + 1] > arrayOfInt[i]) {
 				return false;
 			}
