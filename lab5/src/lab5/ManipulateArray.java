@@ -44,7 +44,7 @@ public class ManipulateArray {
 		
 		int last = arrayOfInt[(arrayOfInt.length-1)];
 		
-		for (int i = arrayOfInt.length - 1; i >= 0; i--) {
+		for (int i = arrayOfInt.length - 1; i > 0; i--) {
 			arrSwap[i] = arrSwap[i - 1];
 		}
 		
@@ -56,7 +56,7 @@ public class ManipulateArray {
 	public int[] replaceWithBiggestNeighbor() {
 		int[] arrCpy = arrayOfInt.clone();
 		
-		for (int i = 1; i < (arrayOfInt.length - 2); i++) {
+		for (int i = 1; i < (arrayOfInt.length - 1); i++) {
 			if (arrayOfInt[i-1] > arrayOfInt[i+1]) {
 				arrCpy[i] = arrayOfInt[i-1];
 			} else {
