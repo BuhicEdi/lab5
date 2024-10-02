@@ -38,8 +38,8 @@ public class CheckString2 {
 		return voCount;
 	}
 
-	public int findString(String strSearch) {
-		for(int i = strSearch.length(); i < str.length(); i++) {
+	public int findString(String strSearch) {		 
+		for(int i = 0; i < str.length(); i=i+strSearch.length()) {
 			if (strSearch.contains(str.substring(i, (i + 1))) || strSearch.contains(str.substring(0, strSearch.length()))) {
 				return str.indexOf(strSearch);
 			}
