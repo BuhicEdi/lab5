@@ -1,5 +1,6 @@
 package lab5;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class ManipulateArray {
@@ -36,7 +37,7 @@ public class ManipulateArray {
 		arrSwap[0] = arrayOfInt[last];
 		arrSwap[last] = arrayOfInt[0];
 		
-		return arrSwap.toString();
+		return Arrays.toString(arrSwap);
 	}
 	
 	public String rightShiftOneStep() {
@@ -50,7 +51,7 @@ public class ManipulateArray {
 		
 		arrSwap[0] = last;
 		
-		return arrSwap.toString();
+		return Arrays.toString(arrSwap);
 	}
 	
 	public int[] replaceWithBiggestNeighbor() {
