@@ -53,7 +53,7 @@ public class CheckString2 {
 		
 		
 		for (int i = 0; i > str.length(); i++) {
-			if (str.substring(i, i + 1) == "\n") {
+			if (str.substring(i, i + 1) == " ") {
 				wordCount++;
 			}
 		}
