@@ -49,15 +49,18 @@ public class CheckString2 {
 	}
 
 	public int countWords() {
-		int wordCount = 0;
-		
+		int wordCount = 1;
+
+		if (str.length() == 0) {
+			return 0;
+		}
+
 		for (int i = 0; i < str.length(); i++) {
 			if (str.substring(i, i + 1) == " ") {
 				wordCount++;
 			}
 		}
-		
+
 		return wordCount;
 	}
-
 }
