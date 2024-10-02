@@ -44,7 +44,7 @@ public class ManipulateArray {
 		
 		int last = arrayOfInt[(arrayOfInt.length-1)];
 		
-		for (int i = arrayOfInt.length - 1; i > 0; i--) {
+		for (int i = arrayOfInt.length - 1; i >= 0; i--) {
 			arrSwap[i] = arrSwap[i - 1];
 		}
 		
