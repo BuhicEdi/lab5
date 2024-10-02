@@ -39,7 +39,11 @@ public class ManipulateArray {
 		return arrSwap.toString();
 	}
 	
+	public void rightShiftOneStep() {
+		
+	}
 	
+	public void replaceWithBiggestNeighbor() {}
 	
 	
 }
