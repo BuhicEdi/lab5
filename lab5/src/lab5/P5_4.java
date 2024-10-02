@@ -3,8 +3,10 @@ package lab5;
 public class P5_4 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		CheckString2 c = new CheckString2("");
+		
+		
+		System.out.println(c.middle());
 	}
 
 }
