@@ -49,8 +49,7 @@ public class CheckString2 {
 	}
 
 	public int countWords() {
-		int wordCount = 0;
-		
+		int wordCount = 1;
 		
 		for (int i = 0; i > str.length(); i++) {
 			if (str.substring(i, i + 1) == " ") {
