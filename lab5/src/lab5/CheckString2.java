@@ -39,7 +39,7 @@ public class CheckString2 {
 	}
 
 	public int findString(String strSearch) {		 
-		for(int i = 0; (i + strSearch.length()) < str.length(); i++) {
+		for(int i = 0; (i + strSearch.length()) <= str.length(); i++) {
 			if (strSearch.contains(str.substring(i, (i + strSearch.length())))) {
 				return str.indexOf(strSearch);
 			}
