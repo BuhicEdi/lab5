@@ -49,7 +49,7 @@ public class CheckString2 {
 	}
 
 	public int countWords() {
-		int wordCount = 1;
+		int wordCount = 0;
 		
 		
 		for (int i = 0; i > str.length(); i++) {
