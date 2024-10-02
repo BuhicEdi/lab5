@@ -39,11 +39,31 @@ public class ManipulateArray {
 		return arrSwap.toString();
 	}
 	
-	public void rightShiftOneStep() {
+	public String rightShiftOneStep() {
+		int[] arrSwap = arrayOfInt.clone();
 		
+		int last = arrayOfInt[(arrayOfInt.length-1)];
+		
+		for (int i = arrayOfInt.length - 1; i > 0; i--) {
+			arrSwap[i] = arrSwap[i - 1];
+		}
+		
+		arrSwap[0] = last;
+		
+		return arrSwap.toString();
 	}
 	
-	public void replaceWithBiggestNeighbor() {}
-	
+	public int[] replaceWithBiggestNeighbor() {
+		int[] arrCpy = arrayOfInt.clone();
+		
+		for (int i = 1; i < (arrayOfInt.length - 2); i++) {
+			if (arrayOfInt[i-1] > arrayOfInt[i+1]) {
+				arrCpy[i] = arrayOfInt[i-1];
+			} else {
+				arrCpy[i] = arrayOfInt[i+1];
+			}
+		}
+		return arrCpy.clone();
+	}
 	
 }
