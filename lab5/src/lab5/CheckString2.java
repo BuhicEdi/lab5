@@ -50,18 +50,18 @@ public class CheckString2 {
 
 	public int countWords() {
 		int wordCount = 1;
-		boolean newWord = false;
+		boolean newWord = true;
 
 		if (str.length() == 0) {
 			return 0;
 		}
 
 		for (int i = 0; i < str.length(); i++) {
-			if (str.substring(i, i + 1).isBlank() && newWord == false) {
+			if (str.substring(i, i + 1).isBlank() && newWord == true) {
 				wordCount++;
-				newWord = true;
-			} else {
 				newWord = false;
+			} else {
+				newWord = true;
 			}
 		}
 		
