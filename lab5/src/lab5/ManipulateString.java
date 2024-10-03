@@ -15,7 +15,7 @@ public class ManipulateString {
 	}
 
 	public String scramble() {
-		String lastChar = str.substring(str.length() - 1, str.length());
+		String lastChar = str.substring(str.length());
 		String scramStr = str.substring(1, str.length());
 		String newStr = str.substring(0, 1);
 		
