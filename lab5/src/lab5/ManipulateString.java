@@ -1,5 +1,6 @@
 package lab5;
 
+import java.util.Random;
 
 public class ManipulateString {
 
@@ -14,9 +15,20 @@ public class ManipulateString {
 	}
 
 	public String scramble() {
+		String lastChar = str.substring(str.length() - 1, str.length());
+		String scramStr = str.substring(1, str.length() - 1);
+		String newStr = str.substring(0, 1);
 		
-		return null;
-
+		for (int i = scramStr.length(); i > 0; i--) {
+			Random r = new Random();
+			int ran = r.nextInt(0, scramStr.length());
+			
+			newStr += scramStr.charAt(ran);
+			scramStr = scramStr.substring(0, ran) + scramStr.substring(ran + 1, scramStr.length());
+			
+		}
+		
+		return newStr += lastChar;
 	} 
 	
 	public String reverse() {
