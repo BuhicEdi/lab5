@@ -1,23 +1,23 @@
 package lab5;
 
+import java.util.Arrays;
+/**
+ * Detta program testar klassen PrintArray
+ * 
+ * @author Edi Buhic
+ * @version 2024-10-03
+ */
+
 public class P5_1 {
 
 	public static void main(String[] args) {
-		PrintArray pr = new PrintArray();
-		int[] array = pr.getArray();
+		PrintArray pa = new PrintArray();
 
-
-		for (int i = 0; i < array.length; i++) {
-			System.out.println(array[i]);
-		}
-
-		System.out.println();
-		pr.printReverse();
-		pr.printEvenElement();
-		
-
-
-
+		pa.printEvenIndex();
+		pa.printEvenElement();
+		pa.printReverse();
+		pa.printFirstAndLast();
+		System.out.println(Arrays.toString(pa.getArray()));
 	}
 
 }
