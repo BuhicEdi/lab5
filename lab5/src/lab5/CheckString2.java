@@ -50,7 +50,7 @@ public class CheckString2 {
 
 	public int countWords() {
 		String[] wordCount;
-		wordCount = str.split("\n");
+		wordCount = str.split("\s");
 		
 		return wordCount.length;		
 		
