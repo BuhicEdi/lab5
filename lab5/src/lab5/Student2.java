@@ -21,6 +21,7 @@ public class Student2 {
 	public void addQuizScore(double score) {
 		if (nbrOfQuiz < MAX_QUIZZES) {
 			quizzes[nbrOfQuiz] = score;
+			nbrOfQuiz++;
 		}
 	}
 	
