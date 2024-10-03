@@ -3,7 +3,7 @@ package lab5;
 public class P5_4 {
 
 	public static void main(String[] args) {
-		CheckString2 c = new CheckString2("  a a");
+		CheckString2 c = new CheckString2("b ");
 		
 		
 		System.out.println(c.middle());

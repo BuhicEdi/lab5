@@ -50,18 +50,23 @@ public class CheckString2 {
 
 	public int countWords() {
 		String[] wordSplit;
-		int wordCount;
+		int wordCount = 0;
 
 		wordSplit = str.split("\s");
-		wordCount = wordSplit.length;
 
-		for (int i = 0; i < (wordSplit.length - 1); i++) {
-			if (str == "") {
-				return 0;
-			} else if( wordSplit[i] == "\s" && wordSplit[i + 1] == "\s") {
+		if (str.isEmpty() == false) {
+			wordCount = wordSplit.length;
+		} else {
+			return wordCount;
+		}
+		
+		
+		 for (int i = 0; i <= (wordSplit.length - 1); i++) {
+			System.out.println("i: " + wordSplit[i]); 
+			if (wordSplit[i] == "") {
 				wordCount--;
 			}
-		}
+		} 
 		
 		return wordCount;
 		
