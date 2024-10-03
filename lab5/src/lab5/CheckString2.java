@@ -60,6 +60,10 @@ public class CheckString2 {
 				wordCount++;
 			}
 		}
+		
+		if (str.substring(str.length() - 1).isBlank() == false) {
+			wordCount++;
+		}
 	
 		return wordCount;
 	}
