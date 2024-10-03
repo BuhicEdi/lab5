@@ -49,10 +49,22 @@ public class CheckString2 {
 	}
 
 	public int countWords() {
-		String[] wordCount;
-		wordCount = str.split("\s");
+		String[] wordSplit;
+		int wordCount;
+
+		wordSplit = str.split("\s");
+		wordCount = wordSplit.length;
+
+		for (int i = 0; i < (wordSplit.length - 1); i++) {
+			if (str == "") {
+				return 0;
+			} else if( wordSplit[i] == "\s" && wordSplit[i + 1] == "\s") {
+				wordCount--;
+			}
+		}
 		
-		return wordCount.length;		
+		return wordCount;
+		
 		
 	}
 }
