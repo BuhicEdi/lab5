@@ -22,7 +22,7 @@ public class ManipulateString {
 	public String reverse() {
 		String strReversed = null;
 		
-		for (int i = str.length(); i >= 0; i--) {
+		for (int i = str.length() - 1; i >= 0; i--) {
 			strReversed += str.charAt(i);
 		}
 		
@@ -31,8 +31,11 @@ public class ManipulateString {
 	
 	public void insertAt(int pos, String strAdd) {
 		
+		String subStr = str.substring(pos + 1, str.length());
+		
 		this.str = str.substring(0, pos);
 		this.str += strAdd;
+		this.str += subStr;
 	}
 	
 	public char removeCharAt(int pos) {
