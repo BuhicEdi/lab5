@@ -49,22 +49,10 @@ public class CheckString2 {
 	}
 
 	public int countWords() {
-		int wordCount = 0;
-
-		if (str.length() == 0) {
-			return 0;
-		}
-
-		for (int i = 0; i < (str.length() - 1); i++) {
-			if (str.substring(i, i + 1).isBlank() && str.substring(i, i + 2).isBlank() == false) {
-				wordCount++;
-			}
-		}
+		String[] wordCount;
+		wordCount = str.split("\n");
 		
-		if (str.substring(str.length()-1).isEmpty() == false) {
-			wordCount++;
-		}
-	
-		return wordCount;
+		return wordCount.length;		
+		
 	}
 }
