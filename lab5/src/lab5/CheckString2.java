@@ -49,7 +49,7 @@ public class CheckString2 {
 	}
 
 	public int countWords() {
-		int wordCount = 1;
+		int wordCount = 0;
 
 		if (str.length() == 0) {
 			return 0;
@@ -61,8 +61,8 @@ public class CheckString2 {
 			}
 		}
 		
-		if (str.substring(str.length() - 1).isBlank() == true) {
-			wordCount--;
+		if (str.substring(str.length()-1).isEmpty() == false) {
+			wordCount++;
 		}
 	
 		return wordCount;
