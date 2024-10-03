@@ -19,6 +19,12 @@ public class ManipulateString {
 		String scramStr = str.substring(1, str.length());
 		String newStr = str.substring(0, 1);
 		
+		if (str.length() <= 2) {
+			return str;
+		}
+		
+		
+		
 		for (int i = scramStr.length(); i > 0; i--) {
 			Random r = new Random();
 			int ran = r.nextInt(0, scramStr.length());
