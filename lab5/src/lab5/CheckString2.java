@@ -59,17 +59,17 @@ public class CheckString2 {
 		} else {
 			return wordCount;
 		}
-		
-		
-		 for (int i = 0; i <= (wordSplit.length - 1); i++) {
+
+
+		for (int i = 0; i <= (wordSplit.length - 1); i++) {
 			System.out.println("i: " + wordSplit[i]); 
 			if (wordSplit[i] == "") {
 				wordCount--;
 			}
 		} 
-		
+
 		return wordCount;
-		
-		
+
+
 	}
 }
