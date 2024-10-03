@@ -13,22 +13,11 @@ public class ManipulateString {
 		return str;
 	}
 
- /*	public String scramble() {
-		String strCpy = str;
-		String scrambledStr;
+	public String scramble() {
 		
-		for (int i = str.length(); i <= 0; i--) {
-			Random r = new Random();
-			int ran = r.nextInt(1, i);
-			
-			scrambledStr = strCpy.substring(ran, ran-1);
-			return null;
-			
-			
-		}
+		return null;
 
 	} 
-*/
 	
 	public String reverse() {
 		String strReversed = null;
