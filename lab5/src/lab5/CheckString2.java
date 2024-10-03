@@ -61,8 +61,8 @@ public class CheckString2 {
 			}
 		}
 		
-		if (str.substring(str.length() - 1).isBlank() == false) {
-			wordCount++;
+		if (str.substring(str.length() - 1).isBlank() == true) {
+			wordCount--;
 		}
 	
 		return wordCount;
