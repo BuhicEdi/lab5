@@ -56,16 +56,11 @@ public class CheckString2 {
 		}
 
 		for (int i = 0; i < (str.length() - 1); i++) {
-			if (str.substring(i, i + 1).isBlank() && str.substring(i, i + 2).isEmpty() == false) {
+			if (str.substring(i, i + 1).isBlank() && str.substring(i, i + 2).isBlank() == false) {
 				wordCount++;
 			}
 		}
-		
-		if (str.substring(0, 1).isBlank() || str.substring(str.length()-1, str.length()).isBlank()) {
-			wordCount--;
-		}
-		
-
+	
 		return wordCount;
 	}
 }
