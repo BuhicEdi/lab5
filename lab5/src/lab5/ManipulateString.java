@@ -31,7 +31,7 @@ public class ManipulateString {
 	
 	public void insertAt(int pos, String strAdd) {
 		
-		String subStr = str.substring(pos + 1, str.length());
+		String subStr = str.substring(pos, str.length());
 		
 		this.str = str.substring(0, pos);
 		this.str += strAdd;
