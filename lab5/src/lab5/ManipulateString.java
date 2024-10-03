@@ -15,12 +15,17 @@ public class ManipulateString {
 	}
 
 	public String scramble() {
-		String lastChar = str.substring(str.length());
-		String scramStr = str.substring(1, str.length());
-		String newStr = str.substring(0, 1);
 		
-		if (str.length() <= 2) {
+		String lastChar;
+		String scramStr;
+		String newStr;
+		
+		if (str.length() <= 2 || str.isBlank()) {
 			return str;
+		} else {
+			lastChar = str.substring(str.length() - 1, str.length());
+			scramStr = str.substring(1, str.length() - 1);
+			newStr = str.substring(0, 1);
 		}
 		
 		
