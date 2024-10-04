@@ -48,7 +48,7 @@ public class PrintArray {
 	// Metod som matar ut hela arrayen i omvänd ordning
 	public void printReverse() {
 		for (int i = arrayOfInt.length - 1; i >= 0; i--) {
-			System.out.print(arrayOfInt[i] + ", ");
+			System.out.println(arrayOfInt[i]);
 		}
 	}
 
@@ -57,7 +57,8 @@ public class PrintArray {
 		int first = 0;
 		int last = arrayOfInt.length - 1;
 
-		System.out.println(arrayOfInt[first] + ", " + arrayOfInt[last]);
+		System.out.println(arrayOfInt[first]);
+		System.out.println(arrayOfInt[last]);
 	}
 	
 	// Metod som returnerar en kopia på hela arrayen
