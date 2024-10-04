@@ -19,5 +19,4 @@ public class P5_1 {
 		pa.printFirstAndLast();
 		System.out.println(Arrays.toString(pa.getArray()));
 	}
-
 }
