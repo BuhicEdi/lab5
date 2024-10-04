@@ -2,14 +2,20 @@ package lab5;
 
 import java.util.Arrays;
 import java.util.Random;
+/**
+ * Denna klass lagrar en array (antingen slumpmässigt genererad eller en förkonsturerad) och har sedan metoder som kan manipulera den.
+ * 
+ * @author Edi Buhic
+ * @version 2024-10-03
+ */
 
 public class ManipulateArray {
 
+	// Klassattribut som lagrar arrayen
 	private int[] arrayOfInt;
 	
-	
+	// Ena konstruktorn som genererar en helt ny array med 10 slumpmässiga heltal
 	public ManipulateArray() {
-		
 		Random r = new Random();
 		this.arrayOfInt = new int[10];
 		
@@ -18,18 +24,22 @@ public class ManipulateArray {
 		}
 	}
 	
+	// Andra konstruktorn som istället tar emot en förkonstruerad array
 	public ManipulateArray(int[] arr) {
 		this.arrayOfInt = arr;
 	}
 	
+	// Metod som returnerar en kopia av den manipulerade arrayen
 	public int[] getArrayCopy() {
 		return arrayOfInt.clone();
 	}
 	
+	// Metod som returnerar arrayens storlek
 	public int getArraySize() {
 		return arrayOfInt.length;
 	}
 	
+	// Metod som byter ut första och sista elementet med varandra
 	public String swapFirstAndLast() {
 		int[] arrSwap = arrayOfInt.clone();
 		int last = arrayOfInt.length - 1;
@@ -40,6 +50,7 @@ public class ManipulateArray {
 		return Arrays.toString(arrSwap);
 	}
 	
+	// Metod som flyttar varje element ett steg åt höger
 	public String rightShiftOneStep() {
 		int[] arrSwap = arrayOfInt.clone();
 		
@@ -54,6 +65,7 @@ public class ManipulateArray {
 		return Arrays.toString(arrSwap);
 	}
 	
+	// Metod som byter ut elementet mot största grannen
 	public int[] replaceWithBiggestNeighbor() {
 		int[] arrCpy = arrayOfInt.clone();
 		
@@ -66,5 +78,4 @@ public class ManipulateArray {
 		}
 		return arrCpy.clone();
 	}
-	
 }
