@@ -12,10 +12,10 @@ public class P5_2 {
 		CheckNumberArray chkNum = new CheckNumberArray();
 
 		// Matar in exempeltal
-		chkNum.addNbr(8);
-		chkNum.addNbr(6);
-		chkNum.addNbr(4);
+		chkNum.addNbr(1);
+		chkNum.addNbr(2);
 		chkNum.addNbr(3);
+		chkNum.addNbr(4);
 		chkNum.addNbr(-1);
 
 		System.out.println(chkNum.getNbrOfElements());

@@ -46,7 +46,7 @@ public class CheckNumberArray {
 		if (nbrOfElements == 0) {
 			return 0;
 		}
-		return getSum() / nbrOfElements;
+		return (double) getSum() / nbrOfElements;
 	}
 
 	// Metod som kontrollerar ifall alla element är samma värde
