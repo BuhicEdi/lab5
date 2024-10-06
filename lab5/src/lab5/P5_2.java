@@ -10,13 +10,14 @@ public class P5_2 {
 
 	public static void main(String[] args) {
 		CheckNumberArray chkNum = new CheckNumberArray();
-		
+
+		// Matar in exempeltal
 		chkNum.addNbr(8);
 		chkNum.addNbr(6);
 		chkNum.addNbr(4);
 		chkNum.addNbr(3);
 		chkNum.addNbr(-1);
-		
+
 		System.out.println(chkNum.getNbrOfElements());
 		System.out.println(chkNum.getSum());
 		System.out.println(chkNum.getAverage());

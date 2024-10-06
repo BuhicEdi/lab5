@@ -10,7 +10,7 @@ public class CheckString2 {
 
 	// Klassattribut som lagrar strängen
 	private String str;
-	
+
 	// Konstruktor som tar emot en sträng och lagrar den
 	public CheckString2(String str) {
 		this.str = str;
@@ -71,7 +71,6 @@ public class CheckString2 {
 		}
 
 		for (int i = 0; i <= (wordSplit.length - 1); i++) {
-			System.out.println("i: " + wordSplit[i]); 
 			if (wordSplit[i] == "") {
 				wordCount--;
 			}

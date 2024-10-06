@@ -12,9 +12,10 @@ public class P5_6 {
 
 	public static void main(String[] args) {
 		Student2 pucksac = new Student2("puck sac");
-		
+
 		System.out.println(pucksac.getName());
 		pucksac.addQuizScore(3.14);
+		pucksac.addQuizScore(5);
 		System.out.println(pucksac.getTotalScore());
 		System.out.println(pucksac.getAverageScore());
 		System.out.println(pucksac.getNbrOfQuiz());

@@ -26,8 +26,9 @@ public class PrintArray {
 	// Metod som matar ut alla jämna index i arrayen
 	public void printEvenIndex() {
 		for (int i = 0; i < arrayOfInt.length; i=i+2) {
-			System.out.println(arrayOfInt[i]);
+			System.out.print(arrayOfInt[i] + " ");
 		} 
+		System.out.println();
 	}
 
 	// Metod som matar ut alla jämna element i arrayen
@@ -40,16 +41,18 @@ public class PrintArray {
 			}
 
 			if (value == 0) {
-				System.out.println(arrayOfInt[i]);
+				System.out.print(arrayOfInt[i] + " ");
 			}									
 		}
+		System.out.println();
 	}
 
 	// Metod som matar ut hela arrayen i omvänd ordning
 	public void printReverse() {
 		for (int i = arrayOfInt.length - 1; i >= 0; i--) {
-			System.out.println(arrayOfInt[i]);
+			System.out.print(arrayOfInt[i] + " ");
 		}
+		System.out.println();
 	}
 
 	// Metod som matar ut första samt sista elementet i arrayen
@@ -57,10 +60,9 @@ public class PrintArray {
 		int first = 0;
 		int last = arrayOfInt.length - 1;
 
-		System.out.println(arrayOfInt[first]);
-		System.out.println(arrayOfInt[last]);
+		System.out.println(arrayOfInt[first] + " " + arrayOfInt[last]);
 	}
-	
+
 	// Metod som returnerar en kopia på hela arrayen
 	public int[] getArray() {
 		return arrayOfInt.clone();

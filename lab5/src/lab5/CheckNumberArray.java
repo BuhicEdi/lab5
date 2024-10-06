@@ -11,7 +11,7 @@ public class CheckNumberArray {
 	// Klassattribut som lagrar antal element, själva arrayen samt arrayens maxstorlek
 	private static final int MAX_ELEMENTS = 10;
 	private int[] arrayOfInt;
-	private int nbrOfElements;
+	private int nbrOfElements = 0;
 
 	// Konstruktor som genererar en ny array med maxantalet platser
 	public CheckNumberArray() {
@@ -43,11 +43,12 @@ public class CheckNumberArray {
 
 	// Metod som beräknar samt returnerar medelvärdet av alla element
 	public double getAverage() {
-		double totalElements = nbrOfElements;
-
-		return getSum() / totalElements;
+		if (nbrOfElements == 0) {
+			return 0;
+		}
+		return getSum() / nbrOfElements;
 	}
-	
+
 	// Metod som kontrollerar ifall alla element är samma värde
 	public boolean isAllTheSame() {
 		for (int i = nbrOfElements - 1; i > 0; i--) {

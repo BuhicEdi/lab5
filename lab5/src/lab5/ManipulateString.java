@@ -60,25 +60,28 @@ public class ManipulateString {
 
 	// Metod som tar emot ett ord som den sedan adderar ordet i huvudsträngen på den index som användaren bestämmer
 	public void insertAt(int pos, String strAdd) {
+		if (str.length() > 0) {
+			String subStr = str.substring(pos, str.length());
 
-		String subStr = str.substring(pos, str.length());
-
-		this.str = str.substring(0, pos);
-		this.str += strAdd;
-		this.str += subStr;
+			this.str = str.substring(0, pos);
+			this.str += strAdd;
+			this.str += subStr;
+		}
 	}
 
 	// Metod som tar emot en position och plockar sedan bort bokstaven samt returnerar den på vald position
 	public char removeCharAt(int pos) {
 		String newStr;
-		char delChar;
+		char delChar = ' ';
 
-		delChar = str.charAt(pos);
+		if (str.length() > 0) {
+			delChar = str.charAt(pos);
 
-		newStr = str.substring(0, pos);
-		newStr += str.substring(pos + 1, str.length());
+			newStr = str.substring(0, pos);
+			newStr += str.substring(pos + 1, str.length());
 
-		this.str = newStr;
+			this.str = newStr;
+		}
 		return delChar;
 	}
 }
