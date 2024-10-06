@@ -12,6 +12,6 @@ public class P5_7 {
 		System.out.println(newStud.getName());
 		System.out.println(newStud.getNbrOfQuiz());
 		System.out.println(newStud.getTotalScore());
-		System.out.println(newStud.getTotalScore());
+		System.out.println(newStud.getAverageScore());
 	}
 }
